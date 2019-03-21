@@ -1,0 +1,33 @@
+@foreground-color: #FAFAFA;
+@background-color: #333;
+@font-size: 1rem;
+@font-size-h1: @font-size * 2;
+
+body {
+  background-color: @background-color;
+  font-family: 'Roboto', Tahoma, Arial;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: @font-size-h1;
+}
+
+.search-form {
+  .search-form__fieldset {
+    label {
+      display: block;
+      text-transform: uppercase;
+      color: @foreground-color;
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    input[type="text"] {
+      background: none;
+      outline: none;
+      border: 2px @foreground-color solid;
+      color: @foreground-color;
+      padding: 6px;
+    }
+  }
+}
